@@ -1,0 +1,438 @@
+/* FONTS */
+
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+/* GENERAL STYLES */
+
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+body {
+  font-family: Lato;
+}
+
+.header {
+  background: #000;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  outline: 1px solid #eee;
+}
+
+/* HEADER */
+.flex__header {
+  padding: 18px 0 19px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.right__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.right__header :not(:last-child) {
+  margin: 0 33px 0 0;
+}
+
+.logo {
+  margin: 0 41px 0 0;
+}
+
+.search__container {
+  display: flex;
+  align-items: initial;
+}
+
+.search__btn,
+.burger {
+  border: none;
+  background: none;
+}
+
+.search {
+  margin: 0 12px 0 0;
+}
+
+.search__bar {
+  padding: 0 0 0 12px;
+  display: none;
+}
+
+.nav__container {
+  display: flex;
+  position: relative;
+}
+
+.navigation {
+  display: none;
+}
+
+/* CONTENT */
+
+/* TOP */
+
+.top {
+  background: #f1e4e6;
+}
+
+.top__container {
+  min-height: 764px;
+  background: url("../images/dute.png") left bottom no-repeat;
+  background-position: -226px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top__heading {
+  max-width: 377px;
+  width: 50%;
+  border-left: 12px solid #f16d7f;
+  padding: 0 0 0 16px;
+  margin: 0 99px 0 0;
+}
+
+.top__heading h1 {
+  color: #222;
+  font: 900 48px/38px Lato;
+  text-transform: uppercase;
+}
+
+.top__heading span {
+  color: #222;
+  font: bold 32px/38px Lato;
+}
+.top__heading span:last-child {
+  color: #f16d7f;
+  font: bold 32px/38px Lato;
+}
+
+/* CATEGORY */
+
+.product__container {
+  padding: 65px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.product__category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.product__category:not(:last-child) {
+  width: 30%;
+  min-height: 260px;
+  outline: 1px solid #ccc;
+}
+.product__category:last-child {
+  width: 100%;
+  min-height: 180px;
+  outline: 1px solid #ccc;
+  margin: 0 0 96px 0;
+}
+.product__category.women {
+  background: url("../images/women.jpg");
+}
+.product__category.men {
+  background: url("../images/men.jpg");
+}
+.product__category.kids {
+  background: url("../images/kids.jpg");
+}
+.product__category.accesories {
+  background: url("../images/accesories.jpg");
+}
+.product__category h4 {
+  font: 700 24px/28px Lato;
+  color: #f16d7f;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+.product__category span {
+  font: 400 16px/19px Lato;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* FEATURES */
+
+.features {
+  margin: 0 0 95px 0;
+}
+.features__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.features__container h3,
+.features__container p {
+  display: flex;
+  justify-content: center;
+}
+.features__container h3 {
+  color: #222;
+  font: 400 30px/36px Lato;
+}
+.features__container p {
+  padding: 6px 0 0 0;
+  color: #9f9f9f;
+  font: 400 14px/17px Lato;
+}
+.features__box {
+  padding: 48px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.features__box_item {
+  position: relative;
+  width: 30%;
+  background-color: #f8f8f8;
+  outline: 1px solid #eee;
+}
+
+.features__box_item img {
+  width: 100%;
+}
+.features__box_item h4 {
+  padding: 25px 28px 0 18px;
+  margin: 0 0 12px 0;
+  font: normal 300 16px/13px Lato;
+  color: #000;
+}
+.features__box_item p {
+  padding: 0 28px 0 18px;
+  font: normal 300 14px/17px Lato;
+  color: #5d5d5d;
+}
+.features__box_item span {
+  padding: 18px 28px 0 18px;
+  margin: 0 0 20px 0;
+  font: normal 300 16px/19px Lato;
+  color: #f16d7f;
+  display: block;
+}
+.features__box_item-add-cart {
+  width: 100%;
+  height: 399px;
+  background: rgba(58, 56, 56, 0.86);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+.features__box_item-add-cart a {
+  font: normal 14px/17px Lato;
+  font-family: Lato;
+  padding: 10px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+.features__box_item-add-cart a::before {
+  content: url("../images/svg/add-cart.svg");
+}
+.features__box_item-add-cart a span {
+  margin: 0;
+  display: inline-block;
+  color: #fff;
+  padding: 0 0 0 12px;
+}
+.features__box_item:hover .features__box_item-add-cart {
+  display: flex;
+}
+.features__btn {
+  padding: 24px 34px;
+  margin: 0 auto;
+  border: 1px solid #ff6a6a;
+  box-sizing: border-box;
+  color: #f26376;
+  text-decoration: none;
+}
+.features__btn:hover {
+  background: #f16d7f;
+  border: 1px solid #ff6a6a;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+/* ADVANTAGES */
+
+.advantages {
+  background: #222;
+}
+.advantages__container {
+  padding: 104px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages__item h4 {
+  padding: 28px 0 16px 0;
+  font: normal 20px/24px Lato;
+  color: #fbfbfb;
+}
+.advantages__item p {
+  font: normal 13px/17px Lato;
+  text-align: center;
+  color: #fbfbfb;
+}
+.advantages__item .delivery::before {
+  content: url("../images/svg/delivery.svg");
+}
+.advantages__item .discounts::before {
+  content: url("../images/svg/discount.svg");
+}
+.advantages__item .quality::before {
+  content: url("../images/svg/quality.svg");
+}
+.advantages__item .getting__touch {
+  background: url("images/footer-image.png");
+}
+
+/* MAKE CONTACT */
+
+.make__contact_container {
+  min-height: 448px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonial,
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.5;
+  gap: 30px;
+}
+.testimonial p {
+  max-width: 400px;
+  font: normal 20px/24px Lato;
+  text-align: center;
+  color: #222;
+}
+.subscribe h3 {
+  font: 400 18px/30px Lato;
+  color: #222;
+  text-align: center;
+}
+.subscribe h3 span {
+  font: 700 24px/40px Lato;
+  color: #222;
+}
+.subscribe__input {
+  background: #e1e1e1;
+  border-radius: 20px;
+}
+.subscribe__input input[type="email"] {
+  padding: 0px 64px 0px 22px;
+  font: 400 14px/17px Lato;
+  color: #222;
+  background: #e1e1e1;
+  opacity: 0.67;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  height: 49px;
+}
+.subscribe__input input[type="submit"] {
+  width: 100px;
+  height: 49px;
+  font: 400 14px/17px Lato;
+  color: #fff;
+  background: #e05c6e;
+  border-radius: 0 20px 20px 0;
+  border: none;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #000;
+}
+.footer__container {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px solid #eee;
+}
+.copyright {
+  font: 400 16px/19px Lato;
+  color: #fbfbfb;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.social .social__icon {
+  background-color: #fff;
+  width: 33px;
+  height: 33px;
+  display: block;
+}
+.facebook {
+  background: url(../images/svg/fb.svg) center no-repeat;
+}
+.instagram {
+  background: url(../images/svg/instagram.svg) center no-repeat;
+}
+.pinterest {
+  background: url(../images/svg/pinterest.svg) center no-repeat;
+}
+.twitter {
+  background: url(../images/svg/twitter.svg) center no-repeat;
+}
+.social a:hover .facebook {
+  background: url(../images/svg/fb-hover.svg) center no-repeat;
+  background-color: #f16d7f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.social a:hover .instagram {
+  background: url(../images/svg/instagram-hover.svg) center no-repeat;
+  background-color: #f16d7f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.social a:hover .pinterest {
+  background: url(../images/svg/pinterest-hover.svg) center no-repeat;
+  background-color: #f16d7f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.social a:hover .twitter {
+  background: url(../images/svg/twitter-hover.svg) center no-repeat;
+  background-color: #f16d7f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
