@@ -615,6 +615,7 @@ input[type="checkbox"]:hover,
 /* PAGINATION */
 
 .page__pagination {
+  margin: 0 0 96px 0;
   display: flex;
   justify-content: center;
 }
