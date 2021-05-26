@@ -322,6 +322,10 @@ body {
 }
 
 /* MAKE CONTACT */
+.make__contact {
+  background: url("../images/footer-image.png") no-repeat;
+  background-size: cover;
+}
 
 .make__contact_container {
   min-height: 448px;
