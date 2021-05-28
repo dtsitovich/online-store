@@ -779,7 +779,7 @@ input[type="checkbox"]:hover,
 
 /* SHOPPING CART */
 .cart__container {
-  padding: 96px 0 0 0;
+  padding: 96px 0 128px 0;
   display: flex;
   justify-content: space-between;
 }
