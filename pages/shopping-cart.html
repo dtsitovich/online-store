@@ -74,7 +74,105 @@
     <main>
       <section class="page__heading">
         <div class="container heading__container">
-          <h4>Shopping Cart</h4>
+          <h1>Shopping Cart</h1>
+        </div>
+      </section>
+      <section class="cart">
+        <div class="container cart__container">
+          <div class="purchases">
+            <div class="purchase__item">
+              <div class="purchase__item__image"></div>
+              <div class="purchase__item__description">
+                <h3>Mango People T-Shirt</h3>
+                <ul class="purchase__item__list">
+                  <li>Price: <span>300$</span></li>
+                  <li>Color: Red</li>
+                  <li>Size: XL</li>
+                  <li>
+                    Quantity:
+                    <input
+                      type="number"
+                      name="quantity"
+                      min="1"
+                      max="50"
+                      pattern="[0-9]{,2}"
+                      value="2"
+                      required
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="purchase__item__close">
+                <img src="../images/svg/close.svg" alt="" />
+              </div>
+            </div>
+            <div class="purchase__item">
+              <div class="purchase__item__image"></div>
+              <div class="purchase__item__description">
+                <h3>Mango People T-Shirt</h3>
+                <ul class="purchase__item__list">
+                  <li>Price: <span>300$</span></li>
+                  <li>Color: Red</li>
+                  <li>Size: XL</li>
+                  <li>
+                    Quantity:
+                    <input
+                      type="number"
+                      name="quantity"
+                      min="1"
+                      max="50"
+                      pattern="[0-9]{,2}"
+                      value="2"
+                      required
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="purchase__item__close">
+                <img src="../images/svg/close.svg" alt="" />
+              </div>
+            </div>
+            <div class="purchase__buttons">
+              <button>Clear shopping cart</button>
+              <button>Continue shopping</button>
+            </div>
+          </div>
+          <div class="shipping">
+            <div class="shipping__options">
+              <fieldset>
+                <legend>Shipping Adress</legend>
+                <input type="text" name="country" placeholder="Bangladesh" />
+                <input type="text" name="state" placeholder="State" />
+                <input
+                  type="text"
+                  name="postcode"
+                  placeholder="Postcode / ZIP"
+                />
+                <input
+                  class="shipping__btn"
+                  type="submit"
+                  value="Get a quote"
+                />
+              </fieldset>
+            </div>
+            <div class="checkout">
+              <table class="checkout__table">
+                <tr>
+                  <td>Sub total</td>
+                  <td>$900</td>
+                </tr>
+                <tr>
+                  <td>Grand total</td>
+                  <td>$900</td>
+                </tr>
+              </table>
+              <input
+                class="checkout__btn"
+                type="submit"
+                value="Proceed to checkout"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
