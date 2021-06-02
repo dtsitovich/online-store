@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Store - Registration</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flex__header">
+        <div class="left__header">
+          <div class="logo">
+            <a href="#"
+              ><img src="../images/logo.png" alt="logo" width="44" height="38"
+            /></a>
+          </div>
+          <div class="search__container">
+            <button class="search__btn">
+              <img
+                src="../images/svg/search-loupe.svg"
+                alt="search loupe icon"
+              />
+            </button>
+            <div class="search__bar">
+              <input type="search" placeholder="Search..." required />
+              <button class="submit__btn" type="submit">Search</button>
+            </div>
+          </div>
+        </div>
+        <div class="right__header">
+          <div class="nav__container">
+            <button class="burger">
+              <img src="../images/svg/burger-menu.svg" alt="burger menu" />
+            </button>
+            <!--  MAIN MENU WILL BE RIGHT HERE
+                    <nav class="navigation">
+                      <ul class="main__menu">
+                        <li class="main__menu_item">
+                          <a href="" class="main__menu_link">item 1</a>
+                        </li>
+                        <li class="main__menu_item">
+                          <a href="" class="main__menu_link">item 2</a>
+                        </li>
+                        <li class="main__menu_item">
+                          <a href="" class="main__menu_link">item 3</a>
+                        </li>
+                        <li class="main__menu_item">
+                          <a href="" class="main__menu_link">item 4</a>
+                        </li>
+                        <li class="main__menu_item">
+                          <a href="" class="main__menu_link">item 5</a>
+                        </li>
+                      </ul>
+                    </nav> -->
+          </div>
+          <div class="user__profile">
+            <img src="../images/svg/user-profile.svg" alt="User icon" />
+          </div>
+          <div class="shopping__basket">
+            <img
+              src="../images/svg/shopping-basket.svg"
+              alt="shopping basket icon"
+            />
+            <!-- POSTPONED FOR LATER  
+                      <span>5</span> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page__heading">
+        <div class="container heading__container">
+          <h1>Registration</h1>
+        </div>
+      </section>
+      <section class="registration">
+        <div class="container registration__container">
+          <div class="registration__content">
+            <form action="" class="registration__user" method="POST">
+              <fieldset class="user__info">
+                <legend>Your name</legend>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="surname"
+                  placeholder="Last Name"
+                  required
+                />
+                <div class="user__gender">
+                  <input id="male" type="radio" name="gender" value="Male" />
+                  <label for="male">Male</label>
+                  <input
+                    id="female"
+                    type="radio"
+                    name="gender"
+                    value="Female"
+                  />
+                  <label for="female">Female</label>
+                </div>
+              </fieldset>
+              <fieldset class="user__login">
+                <legend>Login Details</legend>
+                <input type="email" name="email" placeholder="Email" required />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+                <p>
+                  Please use 8 or more characters, with at least 1 number and a
+                  mixture of uppercase and lowercase letters
+                </p>
+              </fieldset>
+              <button class="registration__btn" type="submit">
+                Join Now<span></span>
+              </button>
+            </form>
+          </div>
+          <div class="registration__promo">
+            <div class="registration__text">
+              <h3>Loyalty has its perks</h3>
+              <p>
+                Get in on the loyalty program where you can earn points and
+                unlock serious perks. Starting with these as soon as you join:
+              </p>
+              <ul>
+                <li>15% of welcome offer</li>
+                <li>Free shipping, returns and exchanges on all orders</li>
+                <li>$10 off a purchase on your birthday</li>
+                <li>Early acces to products</li>
+                <li>Exclusive offers & rewards</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="make__contact">
+        <div class="container make__contact_container">
+          <div class="testimonial">
+            <img
+              src="../images/testimonial.png"
+              width="96"
+              height="96"
+              alt="Eva Doe"
+            />
+            <p>
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+              pulvinar purus condimentum“
+            </p>
+          </div>
+          <div class="subscribe">
+            <h3>
+              <span>SUBSCRIBE</span><br />
+              FOR OUR NEWLETTER AND PROMOTION
+            </h3>
+            <div class="subscribe__input">
+              <input type="email" placeholder="Enter Your Email" />
+              <input type="submit" value="Subscribe" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="copyright">
+          <p>© 2021 Brand All Rights Reserved.</p>
+        </div>
+        <div class="social">
+          <a href="#"><span class="social__icon facebook"></span></a>
+          <a href="#"><span class="social__icon instagram"></span></a>
+          <a href="#"><span class="social__icon pinterest"></span></a>
+          <a href="#"><span class="social__icon twitter"></span></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
