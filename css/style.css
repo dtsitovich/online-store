@@ -942,3 +942,92 @@ input[type="checkbox"]:hover,
   border: 1px solid #f16d7f;
   box-sizing: border-box;
 }
+
+/* REGISTRATION PAGE */
+.registration__container {
+  padding: 43px 0 96px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.registration__content {
+  width: 33.3%;
+}
+.registration__user,
+.registration__text {
+  padding: 64px 0 0 0;
+}
+.registration__user input[type="text"],
+.registration__user input[type="email"],
+.registration__user input[type="password"] {
+  padding: 16px;
+}
+.user__info,
+.user__login {
+  display: flex;
+  flex-direction: column;
+}
+.user__login {
+  margin: 0 0 40px 0;
+}
+.user__info legend,
+.user__login legend {
+  padding: 0 0 21px 0;
+  font: normal 300 16px/19px Lato;
+  color: #222222;
+}
+.user__info input[type="text"]:nth-of-type(1),
+.user__login input[type="email"] {
+  margin: 0 0 21px 0;
+}
+.user__login input[type="password"] {
+  margin: 0 0 16px 0;
+}
+.user__login p {
+  font: normal 300 13px/16px Lato;
+  color: #b1b1b1;
+}
+
+.user__gender {
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+}
+.user__gender label {
+  padding: 0 20px 0 10px;
+}
+.registration__btn {
+  padding: 18px 30px;
+  color: #fff;
+  background: #f16d7f;
+  border: none;
+  text-transform: uppercase;
+}
+.registration__btn span {
+  padding: 0 0 0 20px;
+}
+.registration__btn span::after {
+  content: url("../images/svg/ship.svg");
+}
+.registration__text {
+  max-width: 652px;
+}
+.registration__text h3,
+.registration__text p,
+.registration__text ul {
+  font: normal 300 24px/29px Lato;
+  color: #000000;
+}
+.registration__text h3 {
+  text-transform: uppercase;
+}
+.registration__text p {
+  padding: 22px 0 5px 0;
+}
+.registration__text ul li {
+  padding: 16px 0 0 24px;
+}
+.registration__text ul li::before {
+  left: -24px;
+  position: relative;
+  content: url(../images/svg/check.svg);
+}

@@ -77,6 +77,73 @@
           <h1>Registration</h1>
         </div>
       </section>
+      <section class="registration">
+        <div class="container registration__container">
+          <div class="registration__content">
+            <form action="" class="registration__user" method="POST">
+              <fieldset class="user__info">
+                <legend>Your name</legend>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  type="text"
+                  name="surname"
+                  placeholder="Last Name"
+                  required
+                />
+                <div class="user__gender">
+                  <input id="male" type="radio" name="gender" value="Male" />
+                  <label for="male">Male</label>
+                  <input
+                    id="female"
+                    type="radio"
+                    name="gender"
+                    value="Female"
+                  />
+                  <label for="female">Female</label>
+                </div>
+              </fieldset>
+              <fieldset class="user__login">
+                <legend>Login Details</legend>
+                <input type="email" name="email" placeholder="Email" required />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                />
+                <p>
+                  Please use 8 or more characters, with at least 1 number and a
+                  mixture of uppercase and lowercase letters
+                </p>
+              </fieldset>
+              <button class="registration__btn" type="submit">
+                Join Now<span></span>
+              </button>
+            </form>
+          </div>
+          <div class="registration__promo">
+            <div class="registration__text">
+              <h3>Loyalty has its perks</h3>
+              <p>
+                Get in on the loyalty program where you can earn points and
+                unlock serious perks. Starting with these as soon as you join:
+              </p>
+              <ul>
+                <li>15% of welcome offer</li>
+                <li>Free shipping, returns and exchanges on all orders</li>
+                <li>$10 off a purchase on your birthday</li>
+                <li>Early acces to products</li>
+                <li>Exclusive offers & rewards</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
