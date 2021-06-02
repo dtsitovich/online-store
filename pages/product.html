@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Store - Product</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flex__header">
+        <div class="left__header">
+          <div class="logo">
+            <a href="#"
+              ><img src="../images/logo.png" alt="logo" width="44" height="38"
+            /></a>
+          </div>
+          <div class="search__container">
+            <button class="search__btn">
+              <img
+                src="../images/svg/search-loupe.svg"
+                alt="search loupe icon"
+              />
+            </button>
+            <div class="search__bar">
+              <input type="search" placeholder="Search..." required />
+              <button class="submit__btn" type="submit">Search</button>
+            </div>
+          </div>
+        </div>
+        <div class="right__header">
+          <div class="nav__container">
+            <button class="burger">
+              <img src="../images/svg/burger-menu.svg" alt="burger menu" />
+            </button>
+            <!--  MAIN MENU WILL BE RIGHT HERE
+                <nav class="navigation">
+                  <ul class="main__menu">
+                    <li class="main__menu_item">
+                      <a href="" class="main__menu_link">item 1</a>
+                    </li>
+                    <li class="main__menu_item">
+                      <a href="" class="main__menu_link">item 2</a>
+                    </li>
+                    <li class="main__menu_item">
+                      <a href="" class="main__menu_link">item 3</a>
+                    </li>
+                    <li class="main__menu_item">
+                      <a href="" class="main__menu_link">item 4</a>
+                    </li>
+                    <li class="main__menu_item">
+                      <a href="" class="main__menu_link">item 5</a>
+                    </li>
+                  </ul>
+                </nav> -->
+          </div>
+          <div class="user__profile">
+            <img src="../images/svg/user-profile.svg" alt="User icon" />
+          </div>
+          <div class="shopping__basket">
+            <img
+              src="../images/svg/shopping-basket.svg"
+              alt="shopping basket icon"
+            />
+            <!-- POSTPONED FOR LATER  
+                  <span>5</span> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page__heading">
+        <div class="container heading__container">
+          <h4>New arrivals</h4>
+          <ul class="heading__breadcrumbs">
+            <li class="heading__breadcrumbs_item">
+              <a href="#" class="heading__breadcrumbs_link"> Home&nbsp; </a>
+            </li>
+            <li class="heading__breadcrumbs_item">
+              <a href="#" class="heading__breadcrumbs_link">
+                &nbsp;Men&nbsp;
+              </a>
+            </li>
+            <li class="heading__breadcrumbs_item">
+              <a href="#" class="heading__breadcrumbs_link active">
+                &nbsp;New Arrivals
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product">
+        <div class="product__slider">
+          <span class="product__handler">
+            <svg
+              width="12"
+              height="21"
+              viewBox="0 0 9 14"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z"
+                fill=""
+              />
+            </svg>
+          </span>
+          <div class="product__image">
+            <img src="../images/product-image.jpg" alt="product image" />
+          </div>
+          <span class="product__handler">
+            <svg
+              width="12"
+              height="21"
+              viewBox="0 0 9 14"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z"
+                fill=""
+              />
+            </svg>
+          </span>
+        </div>
+      </section>
+      <section class="product__info">
+        <div class="container">
+          <div class="product__content">
+            <div class="product__description">
+              <h2>WOMEN COLLECTION</h2>
+              <span></span>
+              <h1>MOSCHINO CHEAP AND CHIC</h1>
+              <p class="product__text">
+                Compellingly actualize fully researched processes before
+                proactive outsourcing. Progressively syndicate collaborative
+                architectures before cutting-edge services. Completely visualize
+                parallel core competencies rather than exceptional portals.
+              </p>
+              <p class="product__price">$561</p>
+              <div class="decor"></div>
+              <div class="product__options">
+                <div class="product__color__option">
+                  <span>Choose color</span>
+                </div>
+                <div class="product__size__option">
+                  <span>Choose size</span>
+                </div>
+                <div class="product__quantity__option">
+                  <span>Quantity</span>
+                </div>
+              </div>
+              <button class="cart__btn"><span></span>Add to Cart</button>
+            </div>
+          </div>
+          <div class="features__box">
+            <div class="features__box_item">
+              <img src="../images/featuresImage_4.jpg" alt="featured image" />
+              <h4>ELLERY X M'O CAPSULE</h4>
+              <p>
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <span>$52.00</span>
+              <div class="features__box_item-add-cart">
+                <a href="#"><span>Add to Cart</span></a>
+              </div>
+            </div>
+            <div class="features__box_item">
+              <img src="../images/featuresImage_3.jpg" alt="featured image" />
+              <h4>ELLERY X M'O CAPSULE</h4>
+              <p>
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <span>$52.00</span>
+              <div class="features__box_item-add-cart">
+                <a href="#"><span>Add to Cart</span></a>
+              </div>
+            </div>
+            <div class="features__box_item">
+              <img src="../images/featuresImage_6.jpg" alt="featured image" />
+              <h4>ELLERY X M'O CAPSULE</h4>
+              <p>
+                Known for her sculptural takes on traditional tailoring,
+                Australian arbiter of cool Kym Ellery teams up with Moda
+                Operandi.
+              </p>
+              <span>$52.00</span>
+              <div class="features__box_item-add-cart">
+                <a href="#"><span>Add to Cart</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="make__contact">
+        <div class="container make__contact_container">
+          <div class="testimonial">
+            <img
+              src="../images/testimonial.png"
+              width="96"
+              height="96"
+              alt="Eva Doe"
+            />
+            <p>
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+              pulvinar purus condimentum“
+            </p>
+          </div>
+          <div class="subscribe">
+            <h3>
+              <span>SUBSCRIBE</span><br />
+              FOR OUR NEWLETTER AND PROMOTION
+            </h3>
+            <div class="subscribe__input">
+              <input type="email" placeholder="Enter Your Email" />
+              <input type="submit" value="Subscribe" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="copyright">
+          <p>© 2021 Brand All Rights Reserved.</p>
+        </div>
+        <div class="social">
+          <a href="#"><span class="social__icon facebook"></span></a>
+          <a href="#"><span class="social__icon instagram"></span></a>
+          <a href="#"><span class="social__icon pinterest"></span></a>
+          <a href="#"><span class="social__icon twitter"></span></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
