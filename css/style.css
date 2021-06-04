@@ -58,8 +58,7 @@ body {
   align-items: initial;
 }
 
-.search__btn,
-.burger {
+.search__btn {
   border: none;
   background: none;
 }
@@ -73,13 +72,58 @@ body {
   display: none;
 }
 
-.nav__container {
-  display: flex;
+/* MAIN MENU */
+
+.main__menu {
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#burger {
+  display: none;
+}
+#burger + label {
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  background: url("../images/svg/burger-menu.svg");
+  width: 32px;
+  height: 23px;
+}
+#burger:checked ~ .burger__menu {
+  display: block;
+}
+.burger__menu {
+  width: 232px;
+  min-height: 764px;
+  background: #fff;
+  cursor: default;
+  display: none;
+  top: 48px;
+  left: 160px;
+  position: absolute;
+}
+.menu {
+  padding: 34px;
+}
+.menu li {
+  margin: 0 !important;
+  padding: 12px 0 0 12px;
+  font: normal 14px/17px Lato;
+  color: #6f6e6e;
 }
 
-.navigation {
-  display: none;
+.menu li h3 {
+  font: normal bold 14px/17px Lato;
+  color: #000000;
+  text-transform: uppercase;
+}
+.menu li span {
+  padding: 20px 0 0 0;
+  font: normal 14px/17px Lato;
+  display: block;
+  color: #f16d7f;
+  text-transform: uppercase;
 }
 
 /* CONTENT */
