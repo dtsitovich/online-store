@@ -1,13 +1,15 @@
 /* SEARCH BAR */
 
-var searchButton = document.querySelector(".search__btn");
+document.addEventListener("DOMContentLoaded", function () {
+  var searchButton = document.querySelector(".search__btn");
 
-searchButton.onclick = function () {
-  var searchBar = document.querySelector(".search__bar");
+  searchButton.onclick = function () {
+    var searchBar = document.querySelector(".search__bar");
 
-  if (searchBar.style.display === "none") {
-    searchBar.style.display = "flex";
-  } else {
-    searchBar.style.display = "none";
-  }
-};
+    if (searchBar.style.display === "none") {
+      searchBar.style.display = "flex";
+    } else {
+      searchBar.style.display = "none";
+    }
+  };
+});

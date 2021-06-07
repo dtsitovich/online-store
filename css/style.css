@@ -401,6 +401,7 @@ body {
   color: #222;
 }
 .subscribe__input {
+  display: flex;
   background: #e1e1e1;
   border-radius: 20px;
 }
@@ -413,6 +414,13 @@ body {
   border-radius: 20px 0 0 20px;
   border: none;
   height: 49px;
+}
+.subscribe__input input[type="email"]:focus {
+  color: #fff;
+  background: #000;
+}
+.subscribe__input input[type="email"]:focus::placeholder {
+  color: #fff;
 }
 .subscribe__input input[type="submit"] {
   width: 100px;
@@ -886,11 +894,22 @@ input[type="checkbox"]:hover,
   width: 36px;
   font-size: 16px;
 }
-.purchase__item__close {
+.purchase__item {
   cursor: pointer;
   top: 28px;
   right: 22px;
+}
+.close {
+  cursor: pointer;
+  background: url(../images/svg/close.svg);
+  height: 18px;
+  width: 18px;
+}
+.purchase__item.close {
   position: absolute;
+  top: 28px;
+  right: 22px;
+  box-shadow: none;
 }
 .purchase__buttons {
   display: flex;
@@ -1000,10 +1019,11 @@ input[type="checkbox"]:hover,
 .registration__text {
   padding: 64px 0 0 0;
 }
-.registration__user input[type="text"],
-.registration__user input[type="email"],
-.registration__user input[type="password"] {
+.registration__user input {
   padding: 16px;
+}
+.registration__user input:focus {
+  border: 1px solid #ef5b70;
 }
 .user__info,
 .user__login {

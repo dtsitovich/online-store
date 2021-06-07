@@ -7,7 +7,6 @@
     <title>Online Store</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -22,8 +21,8 @@
             <button class="search__btn">
               <img src="images/svg/search-loupe.svg" alt="search loupe icon" />
             </button>
-            <div class="search__bar">
-              <input type="search" placeholder="Search..." required />
+            <div class="search__bar" style="display: none">
+              <input type="search" placeholder="Search..." />
               <button class="submit__btn" type="submit">Search</button>
             </div>
           </div>
@@ -265,7 +264,12 @@
               FOR OUR NEWLETTER AND PROMOTION
             </h3>
             <div class="subscribe__input">
-              <input type="email" placeholder="Enter Your Email" />
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
               <input type="submit" value="Subscribe" />
             </div>
           </div>
@@ -285,5 +289,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

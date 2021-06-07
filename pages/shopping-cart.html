@@ -7,7 +7,6 @@
     <title>Online Store - Shopping Cart</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <script defer src="../js/main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -25,8 +24,8 @@
                 alt="search loupe icon"
               />
             </button>
-            <div class="search__bar">
-              <input type="search" placeholder="Search..." required />
+            <div class="search__bar" style="display: none">
+              <input type="search" placeholder="Search..." />
               <button class="submit__btn" type="submit">Search</button>
             </div>
           </div>
@@ -120,9 +119,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="purchase__item__close">
-                <img src="../images/svg/close.svg" alt="" />
-              </div>
+              <div class="purchase__item close"></div>
             </div>
             <div class="purchase__item">
               <div class="purchase__item__image"></div>
@@ -146,9 +143,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="purchase__item__close">
-                <img src="../images/svg/close.svg" alt="" />
-              </div>
+              <div class="purchase__item close"></div>
             </div>
             <div class="purchase__buttons">
               <button>Clear shopping cart</button>
@@ -158,15 +153,28 @@
             </div>
           </div>
           <div class="shipping">
-            <div class="shipping__options">
+            <form class="shipping__options" action="" method="POST">
               <fieldset>
                 <legend>Shipping Adress</legend>
-                <input type="text" name="country" placeholder="Bangladesh" />
-                <input type="text" name="state" placeholder="State" />
+                <input
+                  type="text"
+                  name="country"
+                  placeholder="Bangladesh"
+                  pattern="^[a-zA-Z]{4,}"
+                  required
+                />
+                <input
+                  type="text"
+                  name="state"
+                  placeholder="State"
+                  pattern="^[a-zA-Z]{2,}"
+                />
                 <input
                   type="text"
                   name="postcode"
                   placeholder="Postcode / ZIP"
+                  pattern="^\d{5}(?:[-\s]\d{4})?$"
+                  required
                 />
                 <input
                   class="shipping__btn"
@@ -174,7 +182,7 @@
                   value="Get a quote"
                 />
               </fieldset>
-            </div>
+            </form>
             <div class="checkout">
               <table class="checkout__table">
                 <tr>
@@ -235,5 +243,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/main.js"></script>
   </body>
 </html>

@@ -7,7 +7,6 @@
     <title>Online Store - Registration</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <script defer src="../js/main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -25,7 +24,7 @@
                 alt="search loupe icon"
               />
             </button>
-            <div class="search__bar">
+            <div class="search__bar" style="display: none">
               <input type="search" placeholder="Search..." required />
               <button class="submit__btn" type="submit">Search</button>
             </div>
@@ -105,16 +104,25 @@
                   type="text"
                   name="name"
                   placeholder="First Name"
+                  pattern="/^[a-z ,.'-]+$/i"
                   required
                 />
                 <input
                   type="text"
                   name="surname"
                   placeholder="Last Name"
+                  pattern="/^[a-z ,.'-]+$/i"
                   required
                 />
                 <div class="user__gender">
-                  <input id="male" type="radio" name="gender" value="Male" />
+                  <input
+                    id="male"
+                    type="radio"
+                    name="gender"
+                    value="Male"
+                    checked
+                    required
+                  />
                   <label for="male">Male</label>
                   <input
                     id="female"
@@ -127,11 +135,18 @@
               </fieldset>
               <fieldset class="user__login">
                 <legend>Login Details</legend>
-                <input type="email" name="email" placeholder="Email" required />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  required
+                />
                 <input
                   type="password"
                   name="password"
                   placeholder="Password"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
                   required
                 />
                 <p>
@@ -202,5 +217,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/main.js"></script>
   </body>
 </html>
